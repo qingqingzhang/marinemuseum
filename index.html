@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Maritime A.R.</title>
+    <link rel="icon" href="images/icons/museumlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="GeneralStyles.css" />
+    <link rel="stylesheet" href="IndexStyles.css" />
+
+</head>
+<body>
+    <!--Header-->
+    <div id="heading">
+        <div id="hamburger">
+            <img src="images/icons/hamburger.png" onclick="toggleNav()" />
+        </div>
+        <h1 id="maritime_AR"><a href="index.html" style="color: #4A4747;">Maritime <span style="color: #1080AF;font-weight:600;">A.R.</span></a></h1>
+        <div id="navbar">
+            <a href="index.html">
+                <p class="links" style="color: #1080AF;">Home</p>
+            </a>
+            <a href="InPerson.html">
+                <p class="links">In Person Visitors</p>
+            </a>
+            <a href="3dExperience.html">
+                <p class="links">3D Experience</p>
+            </a>
+            <a href="Virtual.html">
+                <p class="links">Videos</p>
+            </a>
+            <a href="About.html">
+                <p class="links">About</p>
+            </a>
+        </div>
+    </div>
+    <div id="mobileNav" style="display:none;">
+        <a href="index.html">
+            <p class="links" style="color: #1080AF;">Home</p>
+        </a>
+        <hr />
+        <a href="InPerson.html">
+            <p class="links">In Person Visitors</p>
+        </a>
+        <hr />
+        <a href="3dExperience.html">
+            <p class="links">3D Experience</p>
+        </a>
+        <hr />
+        <a href="Virtual.html">
+            <p class="links">Videos</p>
+        </a>
+        <hr />
+        <a href="About.html">
+            <p class="links">About</p>
+        </a>
+    </div>
+    
+    <div id="hero_img">
+        <img id="museum_logo" src="images/icons/museumlogodark.png" alt="H. Lee White Maritime Museum at Oswego logo" />
+        <div id="hero_message">
+            <h3 id="welcome">WELCOME ONBOARD!</h3>
+            <h1 id="hero_text">How are you visiting us at the museum today?</h1>
+            <!--<p id="welcome">WELCOME ONBOARD! <br /><span id="hero_text">How are you visiting us at the museum today?</span></p>-->
+            <!--Buttons-->
+            <div id="buttons">
+                <a href="InPerson.html"><button>IN PERSON</button></a>
+                <a href="3dExperience.html"><button>VIRTUALLY</button></a>
+            </div>
+
+        </div>
+    </div>
+
+    <!--Carousel-->
+    <!--Footer-->
+    <footer>
+        <div class="footer">
+            <h1><a href="index.html" style="color: white; font-weight: 400; padding-right:initial;">Maritime <span style="color: white;font-weight:600;">A.R.</span></a></h1>
+            <div id="navbar" style="justify-content:center; margin-right:auto; margin-top: 2vh; display:flex;">
+                <a href="InPerson.html">
+                    <p class="links" style="color:white;">In Person Visitors</p>
+                </a>
+                <a href="3dExperience.html">
+                    <p class="links" style="color:white;">3D Experience</p>
+                </a>
+                <a href="Virtual.html">
+                    <p class="links" style="color:white;">Videos</p>
+                </a>
+                <a href="About.html">
+                    <p class="links" style="color:white;">About</p>
+                </a>
+            </div>
+        </div>
+        <div class="footer_mobile">
+            <h1><a href="index.html" style="color: white; font-weight: 400; padding-right:initial; font-size:40px; text-align:center;">Maritime <span style="font-weight:600;">A.R.</span></a></h1>
+            <hr style="border-color:white; margin-top:2vh; width:80%" />
+            <div id="footer_nav_mobile">
+                <a href="InPerson.html">
+                    <p class="links" style="color:white;">In Person Visitors</p>
+                </a>
+                <a href="3dExperience.html">
+                    <p class="links" style="color:white;">3D Experience</p>
+                </a>
+                <a href="Virtual.html">
+                    <p class="links" style="color:white;">Videos</p>
+                </a>
+                <a href="About.html">
+                    <p class="links" style="color:white;">About</p>
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        function toggleNav() {
+            var item = document.getElementById('mobileNav');
+            if (item.style.display == 'none') {
+                item.style.display = 'block';
+            }
+            else {
+                item.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
