@@ -1,0 +1,1651 @@
+
+
+
+
+/*----------------------------------------*/
+
+
+
+@media only screen and (max-width: 1025px) { /*mobile*/
+
+  #get_started_text {
+  
+  
+  }
+
+  #museum_logo {
+  
+    display: none;
+  
+  }
+    
+  .tab {
+    
+    overflow: hidden;
+    display:none;
+  
+     }
+    
+     .tabMini {
+    
+      overflow: hidden;
+    
+       }
+
+       .tabMini button {
+  
+        cursor: pointer;
+        transition: 0.3s;
+        font-size: 20px;
+        font-weight: 400;
+        color: black;
+        font-family: 'Open Sans' sans-serif;
+        font-style: normal;
+        font-weight: 500;
+        background-color: rgb(227, 239, 248);
+        border-radius: 0vw;
+        max-width: none;
+      }
+
+      /* Style the buttons inside the tab */
+    .tab button {
+  
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 20px;
+      font-weight: 400;
+      color: black;
+      font-family: 'Open Sans' sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      background-color: rgb(227, 239, 248);
+      border-radius: 0vw;
+      max-width: none;
+    }
+  
+    .tab button.active {
+  
+      background-color: #1080AF;
+    }
+  
+    .tablinks1{
+  
+      height: 12vh;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border: 1px solid #1080AF;
+      display: flex;
+  
+    } 
+
+  
+    .tablinks2 {
+  
+      height: 12vh;
+      align-items: center;
+      justify-content: center;
+      display: none;
+      width: 100%;
+      border: 1px solid #1080AF;
+      display: flex;
+      
+    }
+  
+    .tablinks3 {
+  
+      height: 12vh;
+      align-items: center;
+      justify-content: center;
+      display:none;
+      width: 100%;
+      border: 1px solid #1080AF;
+      display: flex;
+
+    }
+
+    .tablinks4 {
+  
+
+      height: 12vh;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border: 1px solid #1080AF;
+      background-color:rgb(227, 239, 248);
+      margin-bottom: 5vh;
+      font-size: 20px;
+      font-weight: 400;
+      color: black;
+      font-family: 'Open Sans' sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      background-color: rgb(227, 239, 248);
+      border-radius: 0vw;
+      max-width: none;
+      
+
+  
+    }
+
+
+    .tablinks5 {
+  
+
+      height: 12vh;
+      align-items: center;
+      justify-content: center;
+      width: 100%;
+      border: 1px solid #1080AF;
+      background-color:rgb(227, 239, 248);
+      font-size: 20px;
+      font-weight: 400;
+      color: black;
+      font-family: 'Open Sans' sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      background-color: rgb(227, 239, 248);
+      border-radius: 0vw;
+      max-width: none;
+      
+
+  
+    }
+  
+
+
+  
+    .tabDevices {
+      
+      overflow: hidden;
+      border-radius:3vw;
+      width: 95%;
+      height: 100%;
+      margin-top: 4vh;
+      justify-content: space-evenly;
+      margin-left: 2vw;
+      
+    }
+
+
+
+  
+  
+    #OculusBC {
+  
+      width: 100%;
+      height: 10vh;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3vh;
+  
+  
+    }
+  
+    #GoogleBC {
+  
+      
+      width: 100%;
+      height: 10vh;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3vh;
+  
+    }
+  
+    #OtherBC {
+  
+      width: 100%;
+      height: 10vh;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 3vh;
+  
+    }
+  
+    .GCimage {
+  
+      height: 100%;
+      width: 100%; 
+      margin-left: 1vh;
+      margin-top: 5vh;
+    
+    }
+  
+    .overflow {
+    
+      overflow:hidden;
+      animation: fadeEffect 1s;
+      padding-left: 10vw;
+      padding-right: 10vw;
+    
+    }
+  
+    .instructionsImage7 {
+  
+      margin-top: 2vh;
+      margin-bottom: 3vh;
+      height: 100%;
+      width: 100%;
+    
+    }
+  
+    .condenseButton {
+  
+      padding-top: 1vh;
+      padding-bottom:1vh;
+      margin-left: 65vw;
+      max-width: 20vw;
+      max-height: 100%;
+    
+    }
+    
+    .condenseButton :hover {
+    
+      -ms-transform: scale(1.1); /* IE 9 */
+      -webkit-transform: scale(1.1); /* Safari 3-8 */
+      transform: scale(1.1);
+    
+    }
+    
+    .CoSpacesLogosTutorial {
+  
+      height: 60vw;
+      width: 95%;
+      margin-bottom: 12vh;
+      margin-top: 6vh;
+      margin-left: -2vw;
+    
+    }
+
+    #hero_img {
+
+      background-image: url('images/homepage/background.JPG');
+      background-position: 0% 45%;
+      background-size: cover;
+      width: 100%;
+      height: 20vh;
+      display: inline-grid;
+      justify-content: center;
+      text-align: center;
+      color: white;
+    
+  }
+  
+    .TextAlignmentDesktop {
+  
+      padding-top: 4vh;
+      padding-left: 10vw;
+      padding-right: 6vw;
+  
+  
+    }
+  
+    .CoSpacesLogos {
+  
+      height: 60vw;
+      width: 90%;
+      margin-bottom: 8vh;
+      margin-top: 2vh;
+      margin-left: 5vw;
+      border-radius: 10%;
+      
+    }
+
+    .CoSpacesLogosVR {
+  
+      height: 60vw;
+      width: 90%;
+      margin-bottom: 8vh;
+      margin-top: 2vh;
+      border-radius: 10%;
+      
+    }
+
+  
+  /* just added OLH, might not be most efficient way */
+  
+  
+      /* .treaty {
+  
+        margin-left: 6vw; 
+        margin-top: -7vh; 
+        padding-right: 3vw;
+        margin-bottom: 15vh;
+  
+      } */
+  
+      .flexText, .flexText2, .flexText3 {
+  
+          margin-top: -7vh;
+          padding-left: 5vw;
+          padding-right: 5vw;
+          margin-bottom: 2vh;
+  
+      }
+
+      .flexText4 {
+  
+        padding-left: 5vw;
+        padding-right: 5vw;
+        margin-top: -7vh;
+        margin-bottom: 5vh;
+        padding-bottom: 5vh;
+        
+
+    }
+
+    .flexText5 {
+
+      padding-left: 9vw;
+      padding-right: 6vw;
+      margin-top: -7vh;
+      margin-bottom: 5vh;
+      padding-bottom: 5vh;
+
+    }
+
+    .flexTextVR4 {
+
+      margin-left: 3vw; 
+      margin-top: -7vh; 
+      padding-right: 12vw;
+      padding-bottom: 5vh;
+      margin-bottom: 10vh;
+
+    }
+
+      .flexTextVR1, .flexTextVR2 {
+
+        margin-left: 3vw; 
+        margin-top: -7vh; 
+        padding-right: 12vw;
+        margin-bottom: 2vh;
+
+      }
+
+      .flexTextVR3 {
+
+
+        margin-left: 3vw; 
+        margin-top: -7vh; 
+        padding-right: 12vw;
+        padding-bottom: 6vh;
+
+
+      }
+  
+  
+  .flexAR1 {
+  
+    margin-left: -8vw;
+    
+   }
+  
+   .flexAR2 {
+
+    margin-left: -8vw; padding-bottom: 3vh;
+
+   }
+      
+   .OthersPics1 {
+ 
+    margin-right: 7vw;
+    height: 100%; 
+    width: 100%;
+
+  }
+
+  .OthersPics2 {
+
+    height: 100%; 
+    width: 100%;
+
+  }
+
+
+.OthersPics3 {
+
+  height: 100%; 
+  width: 100%;
+  margin-top: 3vh;
+
+}
+
+.OthersPics4 {
+
+  height: 100%; 
+  margin-right: 7vw;
+  width: 100%;
+
+}
+
+    
+/*     
+  .OthersText1 {
+
+
+  }
+
+  .OthersText2 {
+
+    
+  } */
+
+  .OthersText3 {
+
+    color: #1080AF;
+    display:table;
+
+  }
+
+ 
+  .OthersText4 {
+
+    color: #1080AF;
+    display:table;
+
+  }
+
+  .OthersHR {
+ 
+    display:none;
+
+  }
+
+  .OthersHR2 {
+
+    width: 100%; 
+    margin-left: 14vw; 
+    margin-left: 0vw; 
+    margin-top: 1vh;
+    background-color: black; 
+    border: none; 
+    height: .1px;
+
+  }
+
+  .OthersHR3 {
+
+    display:none;
+
+  }
+
+  .VideoSize {
+
+    width : 100%;
+    height : 30vh;
+
+  }
+
+  .OculusPic {
+
+    height: 100%;
+    width: 100%;
+
+  }
+
+  .OculusHR {
+
+    visibility: hidden;
+
+  }
+
+  .ARFlexPics {
+
+    margin-left: 10vw;
+
+  }
+
+  .ARHR {
+
+    visibility: hidden;
+
+  }
+
+    
+  .ARlogo {
+  
+    display:none;
+  
+  }
+
+   
+  .tabHeaderPadding {
+  
+    padding-left: 20vw;
+    padding-right: 20vw;
+    text-align: center;
+    color: #343333;
+    margin-bottom: 8vh;
+  
+  }
+
+  
+  .ARinstructionsImage7 {
+  
+    height: 75%;
+    width: 70%;
+    margin-left: 6vh;
+    padding-left: 5%;
+    padding-right: 5%;
+    
+  }
+  
+  .ARinstructionsImage8 {
+  
+    margin-top: 3vh;
+    height: 75%;
+    width: 70%;
+    margin-left: 6vh;
+    margin-bottom: 10vh;
+    padding-left: 5%;
+    padding-right: 5%;
+
+  }
+  
+  .ShinemanPic {
+
+  
+    height: 25vw;
+    width: 40%;
+    margin-left: 30vw;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+  }
+
+  .tabcontentDevices {
+      
+    display: none;
+    border-color: #1080AF;  
+    background-color:white;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 3vh;
+    margin-left: 1vh;
+    
+  }
+
+
+  .flex6 { 
+  
+  
+    margin-left: -10vw; 
+    
+  }
+
+  .minimize {
+
+    font-size: medium;
+    white-space: nowrap;
+    
+  }
+
+  .AlternativeText2 {
+
+    margin-right: 5vw;
+    padding-right: 5vh;
+    padding-left: 2vh;
+    margin-bottom: 5vh;
+
+  }
+
+  #get_started_text2 {
+    margin: 0px;
+    margin-top: 8vh;
+    height: fit-content;
+    font-weight: 700;
+    font-size: 25px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+
+  }
+
+  /*End of Mobile CSS/*
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  /*-----------------------------------------*/
+  /*------------Desktop Edits:---------------*/
+  /*-----------------------------------------*/
+  @media only screen and (min-width: 1025px) {
+  
+    /*NAVBAR*/
+  
+  
+  
+  .GCimage {
+  
+    height: 45vh;
+    width: 70vh; 
+    margin-left: -15vh;
+  
+  }
+  
+  
+  
+  .table_row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    /*display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+  
+    margin-left: 11%;
+    margin-right: 10%;*/
+  }
+  
+  .headshot_img {
+    display: block;
+    margin-top: 30px;
+    width: 200px;
+    height:200px;
+  }
+  
+  
+  #filler {
+    width: 200px;
+  }
+  
+  /*ADDITIONAL TEXT CUSTOMIZATION*/
+  #about_text {
+    width: 70%;
+    height:fit-content;
+    text-align:justify;
+    margin-bottom: 0.5vh;
+  }
+  
+  
+    #hero_message {
+      
+      height: 40vh;
+  
+  }
+  
+    /*STAFF TABLE*/
+    .headshot_img {
+  
+        width: 300px;
+        height: 300px;
+    }
+  
+    #filler {
+        width: 300px;
+    }
+  
+  
+    /* Style the tab of Browser, VR View, AR View*/
+    .tab {
+  
+     overflow: hidden;
+     border: .3vh solid rgb(184, 210, 228);
+     background-color: rgb(227, 239, 248);
+     border-radius: 3vw;
+     width: 70vw;
+     margin-left: 15vw;
+     margin-right: 15vw;
+     margin-top: 9vh;
+     display: flex;
+     justify-content: space-evenly;
+     align-items: center;
+     align-content: center;
+  
+      }
+  
+  
+    
+  
+    .tabcontent {
+        animation: fadeEffect 1s; /* Fading effect takes 1 second */
+      }
+      
+      /* Go from zero to full opacity */
+      @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 10;}
+      }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      display: inline-block;
+      float: none;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      transition: 0.3s;
+      font-size: 27px;
+      font-weight: 400;
+      border-radius:4vw;
+      color: black;
+      width: 30vw;
+      height: 10vh;
+      font-family: 'Open Sans' sans-serif;
+      font-style: normal;
+      font-weight: 500;
+      
+    }
+  
+    .instructionsButton {
+  
+    overflow: hidden;
+     border: .3vh solid rgb(184, 210, 228);
+     background-color: rgb(227, 239, 248);
+     border-radius: 3vw;
+     width: 15vw;
+     display: flex;
+     align-items: center;
+     align-content: center;
+     color:black;
+     font-family: 'Open Sans' sans-serif;
+     font-style: normal;
+     font-weight: 500;
+     
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      color: #1080AF;
+    }
+  
+  
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #1080AF;
+      color: white;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      display: none;
+      margin-top: 8vh;
+      padding-top: 2vh;
+      
+    }
+  
+    
+    /*3D EXPERIENCE*/
+    #tours {
+     text-align: center;
+     padding-bottom: 8vh;
+    }
+  
+    .cospace_embed {
+  
+      display: inline-block; 
+      position: relative; 
+      width: 25vw; 
+      height: 50vh; 
+      overflow: hidden; 
+      border-radius: 50%; 
+  
+    }
+  
+  .cospace_embed:hover {
+  
+    opacity: 0.8;
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  }
+  
+  
+    .cospace_embedVR {
+        padding-left: 35vh;
+       }
+  
+    .AR_text {
+     color: #1080AF;
+     font-weight: 600;
+     width: initial;
+     text-align: center;
+    }
+  
+    .flex { 
+  
+      display: flex;
+      padding-left: 7vw; 
+      padding-right: 7vw;
+      
+    }
+  
+    .flexText {
+  
+      margin-left: 6vw;
+      margin-top: -7vh;
+  
+    }
+  
+    .flexText2 {
+  
+      margin-left: 6vw; 
+      margin-top: -7vh; 
+      padding-right: 12vw;
+  
+    }
+  
+    .flexText3 {
+  
+      margin-left: 6vw; 
+      margin-top: -7vh; 
+      padding-right: 2vw;
+  
+    }
+  
+    .flex2 { 
+  
+  
+      display: flex;
+      padding-left: 7vw; 
+      padding-right: 21vw; 
+      margin-bottom: 10vh;
+      
+    }
+  
+  
+    .flex3 { 
+  
+  
+      display: flex;
+      padding-left: 7vw; 
+      padding-right: 7vw; 
+      margin-bottom: 10vh;
+      margin-left: -8vw;
+      
+    }
+  
+  
+    .flex4 { 
+  
+  
+      display: flex;
+      padding-left: 7vw; 
+      padding-right: 21vw; 
+      margin-bottom: 5vh;
+      margin-left: -8vw;
+      
+    }
+
+    .flex5 { 
+  
+  
+      padding-left: 7vw; 
+      padding-right: 21vw; 
+      margin-bottom: 10vh;
+      
+    }
+
+    .flex6 { 
+  
+  
+      margin-left: -1vw; 
+      padding-right: 21vw; 
+      margin-bottom: 10vh;
+      
+    }
+
+    .flexOnly {
+
+      display: flex;
+
+    }
+
+    .OthersPics1 {
+
+      height: 27vh; 
+      margin-right: 7vw;
+      width: 45vh;
+
+    }
+
+    .OthersPics2 {
+
+      height: 27vh; 
+      width: 45vh;
+
+    }
+
+    .OthersPics3 {
+
+      height: 27vh; 
+      width: 45vh;
+
+    } 
+    
+    .OthersPics4 {
+
+      height: 27vh; 
+      margin-right: 7vw;
+      width: 45vh;
+
+    }
+
+    .OthersText1 {
+
+      margin-left: 8vw;
+
+    }
+
+    .OthersText2 {
+
+      margin-left: 7vw;
+      
+    }
+
+    .OthersText3 {
+
+      color: #1080AF; 
+      margin-left: -1.5vw;
+
+    }
+
+    .OthersText4 {
+    
+      color: #1080AF;
+      margin-left: -1vw;
+
+    }
+
+  
+  * {
+   box-sizing: border-box
+  }
+  
+  .flexText4 {
+  
+    margin-left: 6vw; 
+    margin-top: -7vh; 
+    padding-right: 3vw;
+
+  }
+
+  .flexText5 {
+  
+    margin-left: 6vw; 
+    margin-top: -7vh; 
+    padding-right: 35vw;
+    padding-bottom: 5vh;
+    margin-bottom: -4vh;
+
+  }
+
+
+  .flexTextVR1 {
+
+    margin-left: 6vw; 
+    margin-top: -7vh; 
+    padding-right: 2vw;
+
+  }
+
+  .flexTextVR2 {
+
+
+    margin-left: 6vw; 
+    margin-top: -7vh; 
+    padding-right: 12vw;
+
+
+  }
+
+  .flexTextVR3 {
+
+    margin-left: 6vw; 
+    margin-top: -7vh; 
+    padding-right: 35vw;
+
+  }
+
+  .flexTextVR4 {
+
+    margin-left: 6vw; 
+    margin-top: -7vh; 
+    padding-right: 2vw;
+
+  }
+  
+  .flexAR1 {
+  
+   display: flex; 
+   padding-left: 7vw; 
+   padding-right: 7vw; 
+   margin-left: -8vw;
+  
+  }
+  
+  .flexAR2 {
+  
+    display: flex; 
+    padding-left: 7vw; 
+    padding-right: 21vw; 
+    margin-left: -8vw; 
+    padding-bottom: 3vh;
+  
+  }
+    
+  #block1 {
+    float:right;
+    height: 200px;
+    margin: -6rem auto;
+  }
+  
+  
+   /* inner tab header styling*/ 
+   
+  .tabDevices {
+      
+      overflow: hidden;
+      border-radius:3vw;
+      width: 65vw;
+      height: 9vh;
+      margin-left: 18vw;
+      margin-right: 18vw;
+      margin-top: -3vh;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      align-content: center;
+      font-size: medium;
+      
+    }
+  
+  
+    .tabcontentDevices {
+        animation: fadeEffect 1s; /* Fading effect takes 1 second */
+      }
+      
+      /* Go from zero to full opacity */
+      @keyframes fadeEffect {
+        from {opacity: 0;}
+        to {opacity: 10;}
+      }
+  
+      
+    /* Style the buttons inside the tab */
+    .tabDevices button{
+  
+      background-color: inherit;
+      display: inline-block;
+      outline: none;
+      cursor: pointer;
+      transition: .3s;
+      font-size: 1.75vw;
+      font-weight: 300;
+      border-radius: 4vw;
+      color: black;
+      font-family: 'Open Sans' sans-serif;
+      font-style: normal;
+      font-weight: 400;
+      width: 20vw;
+  
+    }
+    
+  
+    .tablinks1 {
+  
+      height: 12vh;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+  
+    }
+
+    .tablinks2 {
+  
+      height: 12vh;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+  
+    }
+
+    .tablinks3 {
+  
+      height: 12vh;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+  
+    }
+    
+  
+  
+  
+    .ARinstructions{
+      
+      overflow: hidden;
+      border: .2vw solid rgb(184, 210, 228);
+      background-color: rgb(227, 239, 248);
+      border-radius:200vh;
+      margin-top: 7vh;
+      margin-bottom: 12vh;
+      margin-left: 33vw;
+      margin-right: 33vw;
+      text-align: center;
+      transition: 0.3s;
+      
+    }
+  
+    #get_started_text {
+      margin-top: 8vh;
+  }
+  
+    #hero_img {
+      background-image: url('images/homepage/background.JPG');
+      background-position: 0% 61%;
+  } 
+    
+    /* Change background color of buttons on hover */
+    .ARinstructions button:hover {
+      color: #1080AF;
+    }
+  
+    /* Create an active/current tablink class */
+    .ARinstructions button.active {
+  
+      background-color: #1080AF;
+      color: black;   
+  
+    }
+  
+    
+    /* Style the tab content of inner tabs */
+    .tabcontentDevices {
+      
+      display: none;
+      border-color: #1080AF;  
+      background-color:white;
+      padding-left: 14vw;
+      padding-right: 14vw;
+      padding-top: 3vh;
+      
+    }
+  
+    .OculusButton:hover {
+  
+      color: #1080AF;
+  
+    }
+  
+    .GoogleButton:hover {
+  
+      color: #1080AF;
+  
+    }
+  
+    .OtherButton:hover {
+  
+      color: #1080AF;
+  
+    }
+  
+  .instructionsImage7 {
+  
+    margin-bottom: 2vh;
+    height: 70vh;
+    width: 28%;
+  
+  }
+  
+  .ARinstructionsImage7 {
+
+  
+    margin-left: 15vw;
+    height: 60vh;
+    width: 40vh;
+    margin-bottom: 7vh;
+  
+  }
+  
+  .ARinstructionsImage8 {
+  
+    height: 60vh;
+    width: 40vh;
+    margin-bottom: 7vh;
+    margin-top: 2vh;
+    margin-left: 14vw;
+  
+  }
+  
+  .GoogleInstructions {
+  
+    color: black;
+    font-weight:200;
+    font-family: Roboto, sans-serif;
+  
+  }
+  
+  .OtherInstructions {
+  
+    color: black;
+    font-weight:200;
+    font-family: Roboto, sans-serif;
+  
+  }
+  
+  .ARInstructionsText {
+  
+    color: black;
+    font-weight:600;
+    
+  
+  }
+  
+  .overflow {
+    
+    overflow:hidden;
+    animation: fadeEffect 1s;
+  
+  }
+  
+  
+  .steps {
+  
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 5.5vh;
+    margin-top: 2vh;
+    margin-left: 0vw;
+  
+  }
+  
+  
+  .stepsOther {
+  
+    font-family: Roboto, sans-serif;
+    font-weight: bold;
+    font-size: 2.5vw;
+    display:inline;
+    line-height: 125%;
+  
+  }
+  
+  .ARText {
+  
+    float:left;
+    margin-top: -20vh;
+  
+  }
+  
+  
+  .tabHeaderPadding {
+  
+    padding-left: 15vw;
+    padding-right: 15vw;
+    text-align: center;
+    color: #343333;
+    margin-bottom: 8vh;
+  
+  }
+  
+  .ARlogo {
+  
+    margin-left: 14vw;
+    margin-top: -6vh;
+    height: 50vh;
+    width: 50vh;
+  
+  }
+  
+  .BeforeBlueText {
+  
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    
+  }
+  
+  .BlueText {
+  
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.5vw;
+    color: #1080AF;
+  
+  }
+  
+  .condenseButton {
+  
+    padding-top: 1vh;
+    padding-bottom:1vh;
+    margin-left: 60vw;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    max-width: 8vw;
+    max-height: 8vw;
+  
+  }
+  
+  .condenseButton :hover {
+  
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+  
+  }
+  
+  .CoSpacesLogos {
+  
+    height: 20vw;
+    width: 30vw;
+    margin-left: 6vw;
+    margin-bottom: 8vh;
+    margin-top: 2vh;
+    border-radius: 10%;
+  
+  }
+  
+  .CoSpacesLogosVR {
+  
+    height: 20vw;
+    width: 30vw;
+    margin-left: 6vw;
+    margin-bottom: 8vh;
+    margin-top: 2vh;
+    border-radius: 10%;
+    
+  }
+
+  .CoSpacesLogosVR:hover {
+  
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    opacity: 0.8;
+    
+  }
+
+  .CoSpacesLogos:hover {
+  
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    opacity: 0.8;
+  
+  }
+  
+  
+  
+  .CoSpacesLogosTutorial {
+  
+    height: 30vw;
+    width: 50vw;
+    margin-left: 6vw;
+    margin-bottom: 12vh;
+    margin-top: 6vh;
+  
+  }
+  
+  .CoSpacesLogo_deviceLogo {
+  
+    position: absolute;
+    width: 10%;
+    height: 10vh;
+    width: 7vw;
+    margin-top: 2%;
+    margin-left: 27%;
+
+  }
+  
+  .CoSpacesLogos:hover {
+  
+    -ms-transform: scale(1.1); /* IE 9 */
+    -webkit-transform: scale(1.1); /* Safari 3-8 */
+    transform: scale(1.1); 
+    opacity: 0.8;
+  
+  }
+  
+  
+  .CoSpacesLogosTutorial:hover {
+  
+    -ms-transform: scale(1.05); /* IE 9 */
+    -webkit-transform: scale(1.05); /* Safari 3-8 */
+    transform: scale(1.05); 
+    opacity: 0.8;
+    
+  
+  }
+  
+  .box {
+    display: flex;
+  }
+
+  .OthersHR {
+    
+    width:28%;
+    margin-left: 0; 
+    margin-top: 2vh;
+    background-color: black; 
+    border: none; 
+    height: 1px;  
+    width: 5vw;
+
+  }
+
+  .OthersHR2 {
+
+    width: 100vw; 
+    margin-left: 14vw; 
+    margin-left: 0vw; 
+    margin-top: 1vh;
+    background-color: black; 
+    border: none; 
+    height: .1px;
+
+  }
+
+  .OthersHR3 {
+    
+    width:28%;
+    margin-left: 0; 
+    margin-top: 2vh;
+    background-color: black; 
+    border: none; 
+    height: 1px; 
+    width: 5vw;
+
+  }
+  
+  .VideoSize {
+
+    width : 35vw;
+    height : 25vw;
+
+  }
+
+  .OculusPic {
+
+    height: 47vh;
+    width: 75vh;
+
+  }
+
+  .OculusHR {
+
+    width:30%;
+    margin-left: 0; 
+    margin-top: 2vh;
+    background-color: black; 
+    border: none; 
+    height: 1px; 
+    width: 5vw;
+
+  }
+
+  .ARFlexPics {
+
+    margin-left: 10vw; 
+    display:flex;
+
+  }
+  
+  .ARHR {
+
+    width:27%;
+    margin-left: 0; 
+    margin-top: 1vh;
+    background-color: black; 
+    height: 1px;
+    width: 5vw;
+
+  }
+
+  .ShinemanPic {
+
+    padding-left: 40%;
+    padding-right: 40%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    background-color: white;
+    width: 100%;
+  }
+
+  .tabMini {
+
+    display: none;
+    
+  }
+
+  .AlternativeText {
+
+    padding-right: 15vh;
+    margin-bottom: 7vh;
+  }
+
+  .AlternativeText2 {
+
+    margin-right: 5vw;
+    padding-right: 2vh;
+    padding-left: 2vh;
+    margin-bottom: 5vh;
+
+  }
+  
+
+  .TextAlignmentDesktop {
+  
+    padding-right: 4vw;
+
+
+  }
+
+  #get_started_text2 {
+    margin: 0px;
+    margin-top: 5vh;
+    height: fit-content;
+    font-weight: 700;
+    font-size: 45px;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.35);
+}
+
+
+  }
+  /*End of Desktop Edit*/

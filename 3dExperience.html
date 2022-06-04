@@ -1,0 +1,1720 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Experience</title>
+    <link rel="icon" href="images/icons/museumlogo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="GeneralStyles.css">
+    <link rel="stylesheet" href="3dStyles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6ecd7ef27e.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://kit.fontawesome.com/049529442a.js" crossorigin="anonymous"></script>
+
+<body onload="onPageLoad()"></body>
+</head>
+
+<body>
+    <div id="heading">
+        <div id="hamburger">
+            <img src="images/icons/hamburger.png" onclick="toggleNav()" />
+        </div>
+        <h1 id="maritime_AR"><a href="index.html" style="color: #4A4747;">Maritime <span
+                    style="color: #1080AF;font-weight:600;">A.R.</span></a></h1>
+        <div id="navbar">
+            <a href="index.html">
+                <p class="links">Home</p>
+            </a>
+            <a href="InPerson.html">
+                <p class="links">In Person Visitors</p>
+            </a>
+            <a href="3dExperience.html">
+                <p class="links" style="color: #1080AF;">3D Experience</p>
+            </a>
+            <a href="Virtual.html">
+                <p class="links">Videos</p>
+            </a>
+            <a href="About.html">
+                <p class="links">About</p>
+            </a>
+        </div>
+    </div>
+    <div id="mobileNav" style="display:none;">
+        <a href="index.html">
+            <p class="links">Home</p>
+        </a>
+        <hr />
+        <a href="InPerson.html">
+            <p class="links">In Person Visitors</p>
+        </a>
+        <hr />
+        <a href="3dExperience.html">
+            <p class="links" style="color: #1080AF;">3D Experience</p>
+        </a>
+        <hr />
+        <a href="Virtual.html">
+            <p class="links">Videos</p>
+        </a>
+        <hr />
+        <a href="About.html">
+            <p class="links">About</p>
+        </a>
+    </div>
+    <div id="hero_img">
+        <img id="museum_logo" src="images/icons/museumlogo.png" alt="H. Lee White Maritime Museum at Oswego logo" />
+            <p id="get_started_text2">3D Experience</p>
+        <h3 id="img_credit"><i>The Perfect Day</i> by Joe Falcetti</h3>
+    </div>
+
+    <!--MultiTab View of Desktop, Vr, or AR. Each tab contains different content.
+    The buttons will hide and show content based on the tab selected using a mix
+    of interactible buttons and Javascript-->
+
+    <div class="tab" id="tabID">
+
+        <button class="tablinks1" id="default" onclick="openView(event, 'DesktopView')" style="display: inline-flex;">
+            <img id="Browserphoto" src="images/virtual/3dExperiences/tabBrowser.png"
+                style="padding-right: 1vw;height: 80%;">
+            Desktop</button>
+
+        <button class="tablinks2" id="default2" onclick="openView(event, 'VrView')" style="display: inline-flex;">
+            <img id="VRphoto" src="images/virtual/3dExperiences/tabVRblack.png"
+                style="padding-right: 1vw; height: 80%;">
+            VR View</button>
+
+        <button class="tablinks3" id="default3" onclick="openView(event, 'ArView')" style="display: inline-flex;">
+            <img id="ARphoto" src="images/virtual/3dExperiences/tabARblack.png" 
+            style="padding-right: 1vw;height: 80%;">
+            AR View</button>
+
+    </div>
+
+    <div class="tabMini">
+
+        <button class="tablinks1" id="default4" onclick="openViewMobile(event, 'DesktopView')"
+            style="display: inline-flex;">
+            Desktop
+            <img id="Img1" src="images/virtual/3dExperiences/keyboard_arrow_down.png">
+        </button>
+        <!-- <img src="images/virtual/3dExperiences/keyboard_arrow_down.png">  -->
+
+        <button class="tablinks2" id="default5" onclick="openViewMobile(event, 'VrView')" style="display: inline-flex;">
+            VR View
+            <img id="Img2" src="images/virtual/3dExperiences/keyboard_arrow_down.png">
+        </button>
+
+        <button class="tablinks3" id="default6" onclick="openViewMobile(event, 'ArView')" style="display: inline-flex;">
+            AR View
+            <img id="Img3" src="images/virtual/3dExperiences/keyboard_arrow_down.png">
+        </button>
+    </div>
+
+
+
+    <!--
+        Notes for HTML Section:
+        - None
+    -->
+
+    <!--------------------------------------------------------------------------->
+
+
+    <!--Desktop View Tab-->
+    <div id="DesktopView" class="tabcontent"
+        style="background-color: rgb(227, 239, 248); margin-bottom: -5vh; padding-left: 3vw">
+        <div id="tours">
+
+            <!-- <h1>Interactive Tour</h1> -->
+            <h2 class="TextAlignmentDesktop" style="margin-top: 8vh; ">Click on the thumbnails below to open the
+                interactive maps in a new window.</h2>
+        </div>
+
+
+
+        <div class="flex">
+
+            <div>
+                <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/ZNB-UYH"><img
+                        src="images/virtual/3dExperiences/Links_To_CoSpaces/Browser/Tutorial.png"
+                        class="CoSpacesLogos" /></a>
+                <div class="flexText">
+                    <h2> Tutorial </h2>
+                    <h3> This is the tutorial created for the Desktop interactive exhibits of the H. Lee White Maritime
+                        Museum in Oswego. </h3>
+                </div>
+            </div>
+
+            <!--The Oswego LightHouse-->
+            <div>
+                <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/ABZ-UKQ"><img
+                        src="images/virtual/3dExperiences/Links_To_CoSpaces/Browser/Lighthouse.png"
+                        class="CoSpacesLogos" /></a>
+                <div class="flexText2">
+                    <h2> The Oswego LightHouse </h2>
+                    <h3> The Oswego Harbor West Pierhead Lighthouse was built in 1934 to replace a previous lighthouse
+                        built in 1880. The iconic building has been recreated here, documented with historical
+                        information from the H. Lee White Maritime Museum.</h3>
+                </div>
+            </div>
+
+        </div>
+
+
+        <!-- Major Lundie's Schoolhouse-->
+        <div class="flex2">
+
+            <div>
+                <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/BCL-AGA"><img
+                        src="images/virtual/3dExperiences/Links_To_CoSpaces/Browser/lundie.png"
+                        class="CoSpacesLogos" /></a>
+                <div class="flexText3">
+                    <h2> Major Lundie's Schoolhouse </h2>
+                    <h3> A depiction of Fort Ontario in the 18th century; an important fort for keeping important
+                        waterways under British
+                        control. This scene is based on George Gray’s “Major Lundie’s School House on Wheels”.
+                        The Schoolhouse, Anne McVickar, and Basil Dunbar's duel are featured in this scene.</h3>
+                </div>
+            </div>
+
+
+            <!--The Treaty of Oswego-->
+            <div>
+                <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/GLV-NKP"><img
+                        src="images/virtual/3dExperiences/Links_To_CoSpaces/Browser/Treaty.png"
+                        class="CoSpacesLogos" /></a>
+                <div class="flexText4">
+                    <h2> The Treaty of Oswego </h2>
+                    <h3> A depiction of the Treaty of Oswego, a George Gray mural. In this scene, Chief Pontiac, an
+                        Ottawa War Chief,
+                        can be seen negotiating with Robert Rogers.
+                        Featured in this scene are Pontiac, Rogers, trade goods, The Northwest Passage, and Roger's
+                        Rangers.</h3>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <button class="tablinks5" id="default8" onclick="openViewMobile(event, 'VrView')" style="display: inline-flex;">
+        VR View
+        <img id="Img4" src="images/virtual/3dExperiences/keyboard_arrow_down.png"></button>
+
+    <button class="tablinks5" id="default9" onclick="openViewMobile(event, 'ArView')" style="display: inline-flex;">
+        AR View
+        <img id="Img5" src="images/virtual/3dExperiences/keyboard_arrow_down.png">
+    </button>
+
+
+    <!--
+        Notes for HTML Section:
+        - None
+    -->
+    <!------------------------------------------------->
+
+
+
+
+
+
+    <!--VR View Tab-->
+    <div id="VrView" class="tabcontent">
+        <!-- <h2 class="tabHeaderPadding">
+            Depending on the VR device, different instructions may apply.
+            Select a tab based on the device you are using.
+        </h2> -->
+
+
+        <div class="tabDevices">
+            <button div id="OculusBC" style="background-color:#80C8F3;"
+                onclick="openVRDevice(event, 'Oculus'); ShowAndHide()">Oculus Quest 2</button>
+
+            <button div id="GoogleBC" style="background-color:#80C8F3;margin-left: 1vw;"
+                onclick="openVRDevice(event, 'Google'); ShowAndHide2() ">Google Cardboard</button>
+
+            <button div id="OtherBC" style="background-color:#80C8F3;margin-left: 1vw;"
+                onclick="openVRDevice(event, 'Other'); ShowAndHide3()">Other Devices</button>
+        </div>
+
+
+        <!--
+        Notes for HTML Section:
+        - The above HTML are the buttons within the VR tab (think tabs within tabs/nested tabs):
+        'Oculus Quest 2', 'Google Cardboard', and 'Other'.
+        The buttons, when clicked, open the selected VR tab and close any other open ones.
+        This creates an "expandable" tab effect which is useful for the optional instructions
+        -->
+
+        <!------------------------------------------------->
+
+
+        <!--The first nested tab: Oculus Quest 2 -->
+        <div id="Oculus" class="tabcontentDevices">
+
+
+            <img class="OculusPic" src="images/virtual/3dExperiences/OculusQuest2.png" alt="Oculus Quest 2">
+
+            <div class="overflow">
+
+                <h3 style="margin-bottom: 4vh;"><a style="color: #1080AF;font-style: italic;">Oculus Quest 2
+                        <span style="color: #797878;"> is provided at the H. Lee White Maritime Museum for visitors
+                        </span></a>
+                </h3>
+
+
+                <h3 style="color: #343333; font-weight: bold;"> Steps to Follow: </h3>
+
+                <hr class="OculusHR">
+
+                <h3><a style="color: #1080AF;">Step 1:
+                        <span style="color: #797878;"> Navigate to this web page in your browser within your Oculus Quest 2</span></a>
+                </h3>
+
+                <h3><a style="color: #1080AF;">Step 2:
+                        <span style="color: #797878;"> Click one of the icons below to start the virtual tour</span></a>
+                </h3>
+
+            </div>
+
+
+            <button class=" condenseButton" onclick="condenseFunction()">
+                <img src="images/virtual/3dExperiences/up.png" alt="UP"> </i></button>
+
+
+
+        </div>
+
+        <!--
+        Notes for HTML Section:
+        - The condenseButton (blue arrow) simply closes the tab, improving
+        expandable functionality (now users can either click button or tab header to close tab)
+         -->
+
+        <!------------------------------------------------->
+
+
+        <!------The second nested tab: Google Cardboard----->
+        <div id="Google" class="tabcontentDevices">
+
+            <img class="GCimage" src="images/virtual/3dExperiences/GoogleCardboard.png" alt="Cardboard Image">
+            <!-- 
+            <p style = "margin-left: .5vw; margin-bottom: -7vh;"> <b> BOBO VR headset with Smartphone </b> </p> -->
+
+            <div class="overflow">
+
+                <h3 style="color: #343333; font-weight: bold;"> Steps to Follow: </h3>
+
+                <hr
+                    style=" width:28%;margin-left: 0; margin-top: 2vh;background-color: black; border: none; height: 1px; width: 5vw;">
+
+
+                <h3><a style="color: #1080AF;">Step 1:
+                        <span style="color: #797878;">Install CoSpaces app on a mobile device</span></a></h3>
+
+                <h3><a style="color: #1080AF;">Step 2:
+                        <span style="color: #797878;">
+                            Search for the name of each project in the CoSpaces’s search box, including “The
+                            Oswego Lighthouse”, “Major Lundie’s Schoolhouse”, and “The Treaty of Oswego"</span></a></h3>
+
+                <h3><a style=" color: #1080AF;">Step 3:
+                        <span style="color: #797878;">Finally, please click on the View icon at the bottom right corner
+                            of the mobile screen (as shown in the image below) and select “View in VR”. Then insert the
+                            mobile device into a VR cardboard</span></a></h3>
+
+
+                <img class=" instructionsImage7" src="images/virtual/3dExperiences/7 1.png" alt="Step 7">
+
+            </div>
+
+            <button class="condenseButton" onclick="condenseFunction()">
+                <img src="images/virtual/3dExperiences/up.png" alt="UP"> </i></button>
+
+        </div>
+
+        <!--
+        Notes for HTML Section:
+        - overflow class is to keep pictures within nested tab
+        - The condenseButton (blue arrow) simply closes the tab, improving
+        expandable functionality (now users can either click button or tab header to close tab)
+        -->
+
+        <!------------------------------------------------->
+
+
+        <!-----------The Third nested tab: Other----------->
+        <div id="Other" class="tabcontentDevices">
+
+            <div class="overflow">
+
+
+                <!---The below section is the set of instructions for the Oculus Go and Oculus Quest--->
+                <br>
+                <h3 style=" font-weight: bold;"> Our 3D projects can also be viewed on devices
+                    such as Oculus Go, Oculus Quest, ClassVR,
+                    and Pico Headsets </h3>
+                <hr
+                    style="width: 100vw; margin-left: 14vw; margin-bottom: 8vh; margin-left: 0vw; margin-top: 7vh;background-color: black; border: none; height: .1px; width: 66vw;">
+
+                <h1 class="minimize" style="margin-bottom: 10vh;"><a style="color: #797878;">
+                        Instructions for
+                        <span style="color: #1080AF; font-style: italic;">
+                            Oculus Go</span> and <span style="color: #1080AF;font-style: italic;">
+                            Oculus Quest</span></a></h1>
+
+
+                <div class="flexOnly">
+                    <div>
+                        <img class="OthersPics1" src="images/virtual/3dExperiences/OculusGo.png" alt="Oculus Go Image">
+                        <h3 class="OthersText1">Oculus Go</h3>
+                    </div>
+
+                    <div>
+                        <img class="OthersPics2" src="images/virtual/3dExperiences/OculusQuest.png" alt="Oculus Quest">
+                        <h3 class="OthersText2">Oculus Quest</h3>
+                    </div>
+                </div>
+
+                <h3 style="color: #343333;  font-weight: bold;"> Steps to Follow: </h3>
+
+                <hr class="OthersHR">
+
+                <h3><a style="color: #1080AF;">Step 1:
+                        <span style="color: #797878;">Power on your Oculus Go or Oculus Quest</span></a></h3>
+
+                <h3><a style="color: #1080AF;">Step 2:
+                        <span style="color: #797878;">
+                            From the Oculus dashboard, open the integrated web browser</span></a></h3>
+
+                <h3><a style=" color: #1080AF;">Step 3:
+                        <span style="color: #797878;">We need to add Maritime project URL here?</span></a></h3>
+
+                <iframe class="VideoSize" src="https://www.youtube.com/embed/rs6fUvnb2QQ">
+                </iframe>
+
+                <h3 style="color: #797878;">
+                    Watch the video tutorial to learn how you can explore CoSpaces integrated web
+                    browser on Oculus Go
+                    and Oculus Quest
+                </h3>
+
+                <h3 style="margin-bottom: 1vh;"> <a style="color: #797878;">
+                        Visit the link: <a href="https://cospaces.io/edu/tech-check/oculus-go.html#vr"><span
+                                class="OthersText3">https://cospaces.io/edu/tech-check/oculus-go.html#vr
+                            </span></a></a></h3>
+
+
+
+                <h3 style="color: #797878;">
+                    If you are using Oculus Go or Oculus Quest, please access our website
+                    and enjoy the Maritime museum virtual reality environment using the
+                    integrated web browser in the device</h3>
+
+                <hr class="OthersHR2">
+
+                <!-------------------------------------------->
+
+
+                <!---The below section is the set of instructions for the ClassVR Headset--->
+
+                <h1 class="minimize"><a style="color: #797878;">
+                        Instructions for the
+                        <span style="color: #1080AF;font-style: italic;">ClassVR Headset</span></a></h1>
+
+                <img class="OthersPics3" src="images/virtual/3dExperiences/ClassVR.png" alt="Oculus Quest">
+
+                <h3 style="color: #343333;  font-weight: bold;"> Steps to Follow: </h3>
+
+                <hr class="OthersHR3">
+
+                <h3><a style="color: #1080AF;">Step 1:
+                        <span style="color: #797878;">Power on your ClassVR headset</span></a>
+                </h3>
+
+                <h3><a style="color: #1080AF;">Step 2:
+                        <span style="color: #797878;">
+                            Make sure the CoSpaces app is installed on your headset</span></a></h3>
+
+                <h3><a style=" color: #1080AF;">Step 3:
+                        <span style="color: #797878;">Either copy-and-paste the share links into the search box above to
+                            the share with all your ClassVR headset</span></a></h3>
+
+
+                <h3><a style="color: #797878;">
+                        Visit the link:<a href="https://cospaces.io/edu/tech-check/classvr.html"><span
+                                class="OthersText4">https://cospaces.io/edu/tech-check/classvr.html
+                            </span></a></a></h3>
+
+                <hr class="OthersHR2">
+
+
+                <!--------------------------------------->
+
+                <!---The below section is the set of instructions for the Pico Headsets--->
+
+                <h1 class="minimize"><a style="color: #797878;">
+                        Instructions for the
+                        <span style="color: #1080AF;font-style: italic;">Pico Headsets</span></a></h1>
+
+                <img class="OthersPics4" src="images/virtual/3dExperiences/Pico.png" alt="Pico">
+
+                <h3 style="color: #343333; font-weight: bold;"> Steps to Follow: </h3>
+
+                <hr class="OthersHR3">
+
+                <h3><a style="color: #1080AF;">Step 1:
+                        <span style="color: #797878;">Power on your Pico headsets</span></a></h3>
+
+                <h3><a style="color: #1080AF;">Step 2:
+                        <span style="color: #797878;">
+                            Make sure the CoSpaces app is installed on your headset</span></a></h3>
+
+                <h3><a style=" color: #1080AF;">Step 3:
+                        <span style="color: #797878;">Either copy-and-paste the share links into the search box above to
+                            the share with all your Pico headsets</span></a></h3>
+
+
+
+                <h3><a style="color: #797878;">
+                        Visit the link:<a href="https://cospaces.io/edu/tech-check/pico.html"><span
+                                class="OthersText4">https://cospaces.io/edu/tech-check/pico.html
+                            </span></a></a></h3>
+
+
+                <!-------------------------------------------->
+
+            </div>
+            <button class="condenseButton" onclick="condenseFunction()">
+                <img src="images/virtual/3dExperiences/up.png" alt="UP"> </i></button>
+
+        </div>
+        <!--
+        Notes for HTML Section:
+        - The condenseButton (blue arrow) simply closes the tab, improving
+        expandable functionality (now users can either click button or tab header to close tab)
+        -->
+        <!------------------------------------------------->
+
+        <!------The bottom of the VR tab (not inclusive to the instructions tab)---->
+
+        <br><br>
+
+
+        <div style="background-color: rgb(227, 239, 248); padding-top: 10vh; padding-left: 11vw;">
+
+
+            <!-- <h2 class="AlternativeText"> An alternative way to try the VR experience is to access this page in a browser
+                on a mobile device (with CoSpaces app installed). Select a project below to start your virtual reality
+                journey.</h2> -->
+
+            <h1 style="margin-left: 6vw;"> Tutorial (VR) </h1>
+
+            <!--Tutorial-->
+            <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/ZJB-YKG"><img
+                    src="images/virtual/3dExperiences/Links_To_CoSpaces/VR/Tutorial.png"
+                    class="CoSpacesLogosTutorial" /> </a>
+        </div>
+
+        <div style="background-color: rgb(227, 239, 248); padding-top: 5vh; padding-left: 11vw;">
+            <!--rgb(227, 239, 248)-->
+
+
+            <div class="flex3">
+
+                <div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/ABZ-UKQ"><img
+                            src="images/virtual/3dExperiences/Links_To_CoSpaces/VR/Light-house.png"
+                            class="CoSpacesLogosVR" /></a>
+                    <div class="flexTextVR1">
+                        <h2> The Oswego Lighthouse </h2>
+                        <h3> The Oswego Harbor West Pierhead Lighthouse was built in 1934 to replace a previous
+                            lighthouse built in 1880.
+                            The iconic building has been recreated here, documented with historical information from the
+                            H. Lee White
+                            Maritime Museum.</h3>
+                    </div>
+                </div>
+
+
+
+                <!--Major Lundie's Schoolhouse-->
+                <div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/BCL-AGA"><img
+                            src="images/virtual/3dExperiences/Links_To_CoSpaces/VR/Lundie.png"
+                            class="CoSpacesLogosVR" /></a>
+                    <div class="flexTextVR2">
+                        <h2> Major Lundie's Schoolhouse </h2>
+                        <h3> A depiction of Fort Ontario in the 18th century; an important fort for keeping important
+                            waterways under British
+                            control. This scene is based on George Gray’s “Major Lundie’s School House on Wheels”. The
+                            Schoolhouse,
+                            Anne McVickar, and Basil Dunbar's duel are featured in this scene</h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flex4">
+
+                <!--The Treaty of Oswego-->
+                <div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/GLV-NKP"><img
+                            src="images/virtual/3dExperiences/Links_To_CoSpaces/VR/Treaty.png"
+                            class="CoSpacesLogosVR" /></a>
+                    <div class="flexTextVR3">
+                        <h2> The Treaty of Oswego </h2>
+                        <h3>
+
+                            A depiction of the Treaty of Oswego, a George Gray mural. In this scene, Chief Pontiac, an
+                            Ottawa War Chief,
+                            can be seen negotiating with Robert Rogers. Featured in this scene are Pontiac, Rogers,
+                            trade goods,
+                            The Northwest Passage, and Roger's Rangers.
+
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+    </div>
+
+
+    <button class="tablinks4" id="default7" onclick="openViewMobile(event, 'ArView')" style="display: inline-flex;">
+
+        AR View
+        <img id="Img6" src="images/virtual/3dExperiences/keyboard_arrow_down.png">
+    </button>
+
+    <!--
+        Notes for HTML Section:
+        - Simply pictures with embedded links to various coSpaces
+        - Disappearing Button
+      -->
+    <!------------------------------------------------->
+
+    <!--AR View Tab-->
+    <div id="ArView" class="tabcontent">
+
+        <div class="flexOnly" style="padding-right: 10vw;">
+
+            <div style="padding-left: 15vw;">
+
+                <h3 style="color:#343333; font-weight: bold;"> Steps to Experience the Augmented Reality (AR)
+                    Applications: </h3>
+                <hr class="ARHR">
+
+                <h3><a style="color: #1080AF;">Step 1:
+                        <span style="color: #797878;">Install CoSpaces app on a mobile device</span></a></h3>
+
+                <h3><a style="color: #1080AF;">Step 2:
+                        <span style="color: #797878;">
+                            Search for the name of each project in the CoSpaces’s search box, including “The Oswego
+                            Lighthouse (AR)”, “Major Lundie’s Schoolhouse(AR)”, and “The Treaty of Oswego
+                            (AR)”</span></a></h3>
+
+                <h3><a style=" color: #1080AF;">Step 3:
+                        <span style="color: #797878;">Play the project and click on the View icon in the bottom right
+                            corner of the screen. Then select “View in AR” (as shown in the image below).</span></a>
+                </h3>
+            </div>
+
+            <div>
+
+                <img id="ARLogo" class="ARlogo" src="images/virtual/3dExperiences/augmented-reality.png" alt="AR_Logo">
+
+            </div>
+
+        </div>
+
+        <div class="ARflexPics">
+
+            <img class="ARinstructionsImage8" src="images/virtual/3dExperiences/VR_2 1.png" alt="Step 8">
+
+        </div>
+      
+        <!--
+        Notes for HTML Section:
+        - Not too much going on, mostly just text and images
+        - The condenseButton (blue arrow) simply closes the tab, improving
+        expandable functionality (now users can either click button or tab header to close tab)
+      -->
+        <!------------------------------------------------->
+
+
+
+
+
+        <!------The bottom of the AR tab (not inclusive to the instructions tab)---->
+
+
+        <div style="background-color: rgb(227, 239, 248); padding-top: 10vh; padding-left: 10vw;">
+
+            <!-- <h2 class="AlternativeText2"> An alternative way to try the VR experience is to access this page in a
+                browser on a mobile device (with CoSpaces app installed). Select a project below to start your virtual
+                reality journey.</h2> -->
+
+            <div class="flexAR1">
+
+                <div>
+                    <!--Tutorial-->
+
+                    <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/ELL-UKY"><img
+                            src="images/virtual/3dExperiences/Links_To_CoSpaces/AR/Tutorial.png"
+                            class="CoSpacesLogos" /> </a>
+                    <div style="margin-left: 6vw; margin-top: -7vh; padding-right: 2vw;">
+                        <h2> Tutorial </h2>
+                        <h3>
+
+                            This is the tutorial created for the AR interactive exhibits of the H. Lee White Maritime
+                            Museum.
+                            This scene is best experienced in CoSpace's AR functionality.
+
+                        </h3>
+                    </div>
+                </div>
+
+                <div>
+                    <!--The Oswego LightHouse-->
+                    <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/SKC-LPB"><img
+                            src="images/virtual/3dExperiences/Links_To_CoSpaces/AR/Lighthouse.png"
+                            class="CoSpacesLogos" /></a>
+                    <div style="margin-left: 6vw; margin-top: -7vh; padding-right: 13vw;">
+                        <h2> The Oswego LightHouse </h2>
+                        <h3>
+
+                            The Oswego Harbor West Pierhead Lighthouse was built in 1934 to replace a previous
+                            lighthouse built in 1880.
+                            The iconic building has been recreated here, documented with historical information from the
+                            H. Lee
+                            White Maritime Museum. This scene is best experienced in CoSpace's AR functionality.
+
+                        </h3>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="flexAR2">
+
+
+                <!--Major Lundie's Schoolhouse-->
+                <div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/SFX-SHM"><img
+                            src="images/virtual/3dExperiences/Links_To_CoSpaces/AR/Lundie.png"
+                            class="CoSpacesLogos" /></a>
+                    <div style="margin-left: 6vw; margin-top: -7vh; padding-right: 2vw;">
+                        <h2> Major Lundie's Schoolhouse </h2>
+                        <h3>
+
+                            A depiction of Fort Ontario in the 18th century; an important fort for keeping important
+                            waterways
+                            under British control. This scene is based on George Gray’s “Major Lundie’s School House on
+                            Wheels”.
+                            The Schoolhouse, Anne McVickar, and Basil Dunbar's duel are featured in this scene.
+                            This scene is best experienced in CoSpace's AR functionality.
+
+                        </h3>
+                    </div>
+                </div>
+
+
+
+                <!--The Treaty of Oswego-->
+                <div>
+                    <a target="_blank" rel="noopener noreferrer" href="https://edu.cospaces.io/DVQ-BDQ"><img
+                            src="images/virtual/3dExperiences/Links_To_CoSpaces/AR/Treaty.png"
+                            class="CoSpacesLogos" /></a>
+                    <div style="margin-left: 6vw; margin-top: -7vh; padding-right: 3vw;">
+                        <h2> The Treaty of Oswego </h2>
+                        <h3>
+
+                            A depiction of the Treaty of Oswego, a George Gray mural. In this scene, Chief Pontiac, an
+                            Ottawa War Chief,
+                            can be seen negotiating with Robert Rogers. Featured in this scene are Pontiac, Rogers,
+                            trade goods,
+                            The Northwest Passage, and Roger's Rangers. This scene is best experienced in CoSpace's AR
+                            functionality.
+
+                        </h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--
+        Notes for HTML Section:
+        - None
+      -->
+        <!------------------------------------------------->
+    </div>
+    </div>
+
+
+
+
+    <!-- Below is the JavaScript script to handle a variety of Functions, mostly
+    due to the dynamic nature of the expandable tabs-->
+
+    <script>
+
+        var status = window.matchMedia("(min-width: 1025px)").matches;
+        var shifted = false;
+        var counter = 3;
+        var changed = 5;
+
+        window.addEventListener("resize", function () {  //if user shifts between mobile and desktop view
+
+            var windowStatus = window.matchMedia("(min-width: 1025px)").matches;
+
+            if (windowStatus) {
+                counter = 1;
+            } else {
+                counter = 0; //mobile
+            }
+
+            if (!windowStatus && changed == 20 || windowStatus && changed == 10) { 
+
+            }
+            else {
+
+                if (status == 'false' && counter == 1) {
+                    shifted = true;
+                }
+
+                if (status == 'true' && counter == 0) {
+                    shifted = true;
+                }
+
+            }
+
+            counter = 0;
+
+            if (window.matchMedia("(min-width: 1025px)").matches && shifted == true) {
+
+                document.getElementById("default4").style.display = "none";
+                document.getElementById("default5").style.display = "none";
+                document.getElementById("default6").style.display = "none";
+                document.getElementById("default7").style.display = "none";
+                document.getElementById("default8").style.display = "none";
+                document.getElementById("default9").style.display = "none";
+                document.getElementById("VrView").style.display = "none";
+                document.getElementById("ArView").style.display = "none";
+                document.getElementById("DesktopView").style.display = "block";
+                status = 'true';
+                shifted = false;
+
+
+            } else if (window.matchMedia("(max-width: 1025px)").matches && shifted == true) { //mobile
+
+                document.getElementById("default4").style.display = "block";
+                document.getElementById("default5").style.display = "block";
+                document.getElementById("default6").style.display = "block";
+                document.getElementById("DesktopView").style.display = "none";
+                document.getElementById("VrView").style.display = "none";
+                document.getElementById("ArView").style.display = "none";
+                status = 'false';
+                shifted = false;
+
+            }
+
+        }
+        )
+
+        document.getElementById("default").click(); //* - Makes sure that the Desktop tab is the first tab open
+        document.getElementById("Oculus").style.display = "none";
+        document.getElementById("Google").style.display = "none";
+        document.getElementById("Other").style.display = "none";
+        document.getElementById("OculusBC").style.color = "#000000";
+        document.getElementById("GoogleBC").style.color = "#000000";
+        document.getElementById("OtherBC").style.color = "#000000";
+        var open = false;
+        var OcActiveTab = false;
+        var GoogleactiveTab = false;
+        var OtheractiveTab = false;
+        var xed = document.getElementById('Oculus');
+        var yed = document.getElementById('Google');
+        var zed = document.getElementById('Other');
+        var wed = document.getElementById('AR');
+        var AR_active = false;
+        var el = document.getElementById("tabID");
+        var DesktopOpen = false;
+        var VROpen = false;
+        var AROpen = false;
+        //wed.style.display = 'none';
+
+        /*Notes:
+        - The above are a variety of variables to be used in conjunction with the below functions.
+        Most are relevant to the expanding of tabs except the one(s) noted with an *
+        */
+
+        function onPageLoad() { //first function to load when user enters page, adjusts content based on mobile/desktop
+
+
+            var w = document.documentElement.clientWidth || window.innerWidth;
+
+            if (w <= 1025) {
+
+                var x = document.getElementById('DesktopView');
+                x.style.display = "none";
+
+                document.getElementById("default7").style.display = "none";
+                document.getElementById("default8").style.display = "none";
+                document.getElementById("default9").style.display = "none";
+
+            } else {
+
+                var x = document.getElementById('DesktopView');
+                x.style.display = "block";
+                document.getElementById("default7").style.display = "none";
+                document.getElementById("default8").style.display = "none";
+                document.getElementById("default9").style.display = "none";
+
+
+            }
+
+            if (window.matchMedia("(min-width: 1025px)").matches) {
+                status = window.matchMedia("(min-width: 1025px)").matches;
+                changed = 10;
+            } else if (window.matchMedia("(max-width: 1025px)").matches) {
+                status = window.matchMedia("(max-width: 1025px)").matches;
+                changed = 20;
+
+            }
+
+
+        }
+
+        function changeButton(viewName) { 
+
+
+            if (viewName === "DesktopView") {
+
+                if (DesktopOpen == false && VROpen == false && AROpen == false) { //fff
+
+                    document.getElementById('Img1').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default4').style.backgroundColor = "#1080AF";
+                    
+                    document.getElementById('default9').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('Img5').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    
+                       
+                    document.getElementById('default8').style.backgroundColor = "rgb(227, 239, 248)";
+                   document.getElementById('Img4').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    
+
+                } else if (DesktopOpen == false && VROpen == false && AROpen == true) { //fft
+
+                    document.getElementById('Img1').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('Img5').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default4').style.backgroundColor = "#1080AF";
+                    document.getElementById('default9').style.backgroundColor = "#1080AF";
+                    
+
+                } else if (DesktopOpen == false && VROpen == true && AROpen == false) { //ftf
+
+                    document.getElementById('Img1').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('Img4').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default4').style.backgroundColor = "#1080AF";
+                    document.getElementById('default8').style.backgroundColor = "#1080AF";
+              
+                } else if (DesktopOpen == false && VROpen == true && AROpen == true) { //ftt
+
+                    document.getElementById('Img1').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('Img4').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default4').style.backgroundColor = "#1080AF";
+                    document.getElementById('default8').style.backgroundColor = "#1080AF";
+
+
+                } else if (DesktopOpen == true && VROpen == true && AROpen == true) { //ttt
+
+                    document.getElementById('Img1').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('Img2').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default4').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('default5').style.backgroundColor = "#1080AF";//
+                    
+
+                } else if (DesktopOpen == true && VROpen == false && AROpen == true) { //tft
+
+                    document.getElementById('Img1').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default4').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('Img2').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    
+
+                } else if (DesktopOpen == true && VROpen == true && AROpen == false) { //ttf
+
+                    document.getElementById('Img1').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default4').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('Img2').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                  //document.getElementById('Img').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                  document.getElementById('default5').style.backgroundColor = "#1080AF";
+
+
+                } else if (DesktopOpen == true && VROpen == false && AROpen == false) { //fff
+
+                    document.getElementById('Img1').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('Img2').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('Img3').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default4').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('default6').style.backgroundColor = "rgb(227, 239, 248)";
+                    
+                }
+
+
+            } else if (viewName === "VrView") {
+
+                if (VROpen == false && DesktopOpen == false && AROpen == false) { //fff
+
+                    document.getElementById('Img2').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default5').style.backgroundColor = "#1080AF";
+
+                } else if (VROpen == false && DesktopOpen == false && AROpen == true) { //fft
+
+                    document.getElementById('Img2').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('Img6').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default5').style.backgroundColor = "#1080AF";
+                    document.getElementById('default7').style.backgroundColor = "#1080AF";
+
+                } else if (VROpen == false && DesktopOpen == true && AROpen == false) { //ftf
+
+                    document.getElementById('Img4').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default8').style.backgroundColor = "#1080AF";
+
+                } else if (VROpen == false && DesktopOpen == true && AROpen == true) { //ftt
+
+                    document.getElementById('Img4').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('Img6').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default5').style.backgroundColor = "#1080AF";
+                    document.getElementById('default8').style.backgroundColor = "#1080AF";
+                    document.getElementById('default7').style.backgroundColor = "#1080AF";
+
+                } else if (VROpen == true && DesktopOpen == true && AROpen == true) { //ttt
+
+                    document.getElementById('Img4').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('Img5').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default5').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('default8').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('default9').style.backgroundColor = "#1080AF";
+
+                } else if (VROpen == true && DesktopOpen == false && AROpen == true) { //tft
+
+                    document.getElementById('Img2').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default5').style.backgroundColor = "rgb(227, 239, 248)";
+
+                    document.getElementById('Img3').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default6').style.backgroundColor = "#1080AF";
+                   
+
+
+                } else if (VROpen == true && DesktopOpen == true && AROpen == false) { //ttf
+
+                    document.getElementById('Img4').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default5').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('default8').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('default9').style.backgroundColor = "rgb(227, 239, 248)";
+                    document.getElementById('Img5').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    
+
+                } else if (VROpen == true && DesktopOpen == false && AROpen == false) { //fff
+
+                    document.getElementById('Img2').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('Img3').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default5').style.backgroundColor = "rgb(227, 239, 248)";
+
+                }
+
+            } else if (viewName === "ArView") {
+
+                if (AROpen == false && DesktopOpen == false && VROpen == false) { //fff
+
+                    document.getElementById('Img3').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default6').style.backgroundColor = "#1080AF";
+
+                } else if (AROpen == false && DesktopOpen == false && VROpen == true) { //fft
+
+                    document.getElementById('Img6').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default7').style.backgroundColor = "#1080AF";
+
+
+                } else if (AROpen == false && DesktopOpen == true && VROpen == false) { //ftf
+
+                    document.getElementById('Img5').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default9').style.backgroundColor = "#1080AF";
+
+                } else if (AROpen == false && DesktopOpen == true && VROpen == true) { //ftt
+
+                    document.getElementById('Img6').src = "images/virtual/3dExperiences/keyboard_arrow_up.png";
+                    document.getElementById('default7').style.backgroundColor = "#1080AF";
+
+                } else if (AROpen == true && DesktopOpen == true && VROpen == true) { //ttt
+
+                    document.getElementById('Img6').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default7').style.backgroundColor = "rgb(227, 239, 248)";
+
+                } else if (AROpen == true && DesktopOpen == false && VROpen == true) { //tft
+
+                    document.getElementById('Img6').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default7').style.backgroundColor = "rgb(227, 239, 248)";
+
+                } else if (AROpen == true && DesktopOpen == true && VROpen == false) { //ttf
+
+                    document.getElementById('Img5').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default9').style.backgroundColor = "rgb(227, 239, 248)";
+
+                } else if (AROpen == true && DesktopOpen == false && VROpen == false) { //fff
+
+                    document.getElementById('Img3').src = "images/virtual/3dExperiences/keyboard_arrow_down.png";
+                    document.getElementById('default6').style.backgroundColor = "rgb(227, 239, 248)";
+
+                }
+
+
+            }
+
+
+        }
+
+        function openViewMobile(evt, viewName) {
+
+            if (viewName === "DesktopView") {
+
+
+                if (DesktopOpen == true && VROpen == true) {
+
+                    
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "none";
+                    DesktopOpen = false;
+                    document.getElementById("default5").style.display = "block";
+                    document.getElementById("default6").style.display = "none";
+                    document.getElementById("default8").style.display = "none";
+                    document.getElementById("default9").style.display = "none";
+                    document.getElementById("default5").style.display = "flex";
+
+
+                } else if (DesktopOpen == true) {
+
+
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "none";
+                    DesktopOpen = false;
+                    document.getElementById("default5").style.display = "block";
+                    document.getElementById("default6").style.display = "block";
+
+                    document.getElementById("default8").style.display = "none";
+                    document.getElementById("default9").style.display = "none";
+
+                    document.getElementById("default5").style.display = "flex";
+                    document.getElementById("default6").style.display = "flex";
+
+
+                } else if (DesktopOpen == false && VROpen == true) {
+
+
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "block";
+                    document.getElementById("default5").style.display = "none";
+                    document.getElementById("default6").style.display = "none";
+                    DesktopOpen = true;
+                    document.getElementById("default8").style.display = "block";
+                    document.getElementById("default9").style.display = "none";
+
+                    document.getElementById("default8").style.display = "flex";//
+
+
+                } else {
+
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "block";
+                    document.getElementById("default5").style.display = "none";
+                    document.getElementById("default6").style.display = "none";
+                    DesktopOpen = true;
+                    document.getElementById("default8").style.display = "block";
+                    document.getElementById("default9").style.display = "block";
+
+                    document.getElementById("default8").style.display = "flex";
+                    document.getElementById("default9").style.display = "flex";
+
+
+                }
+
+            }
+
+
+
+
+
+            else if (viewName === "VrView") {
+
+
+                if (VROpen == true && DesktopOpen == true) {
+
+
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "none";
+                    VROpen = false;
+                    document.getElementById("default6").style.display = "none";//
+                    document.getElementById("default7").style.display = "none";
+                    document.getElementById("default9").style.display = "block";
+
+                    document.getElementById("default9").style.display = "flex";
+
+
+                }
+                else if (VROpen == true && DesktopOpen == false) {
+
+
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "none";
+                    VROpen = false;
+                    document.getElementById("default6").style.display = "block";
+                    document.getElementById("default7").style.display = "none";
+                    document.getElementById("default9").style.display = "none";
+
+                    document.getElementById("default6").style.display = "flex";
+
+
+                }
+                else if (VROpen == false && DesktopOpen == true) {
+
+
+                    changeButton(viewName);
+                    document.getElementById("default9").style.display = "none";
+                    document.getElementById(viewName).style.display = "block";
+                    document.getElementById("default7").style.display = "block";
+                    VROpen = true;
+
+                    document.getElementById("default7").style.display = "flex";
+
+                } else {
+
+
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "block";
+                    document.getElementById("default6").style.display = "none";
+                    VROpen = true;
+                    document.getElementById("default7").style.display = "block";
+
+                    document.getElementById("default7").style.display = "flex";
+
+
+                }
+            }
+
+
+
+
+            else if (viewName === "ArView") {
+
+
+
+                if (DesktopOpen == true && VROpen == true && AROpen == false) {
+
+
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "block";
+                    AROpen = true;
+
+
+                }
+
+                else if (AROpen == true) {
+
+
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "none";
+                    AROpen = false;
+
+                } else {
+
+
+                    changeButton(viewName);
+                    document.getElementById(viewName).style.display = "block";
+                    AROpen = true;
+
+                }
+
+            } else {
+                alert('Should never happen');
+            }
+
+
+        }
+
+
+        //----------Function for opening the tab view for Browser, VR, and AR---------------
+        function openView(evt, viewName) {
+
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+
+
+            if (viewName === "ArView") {
+
+                
+                document.getElementById("ARphoto").src = "images/virtual/3dExperiences/tabARwhite.png";
+                document.getElementById("Browserphoto").src = "images/virtual/3dExperiences/tabBrowser.png";
+                document.getElementById("VRphoto").src = "images/virtual/3dExperiences/tabVR.png";
+                tablinks = document.getElementsByClassName("tablinks1");
+                document.getElementById("default").style.backgroundColor = "rgb(227, 239, 248)";
+                document.getElementById("default").style.color = "#000000";
+                document.getElementById("default3").style.color = "#FFFFFF";
+                document.getElementById("default3").style.backgroundColor = "#1080AF";
+                document.getElementById("default2").style.backgroundColor = "rgb(227, 239, 248)";
+                document.getElementById("default2").style.color = "#000000";
+
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+                //  document.getElementsByClassName("tablinks2").style.backgroundColor = "red";
+
+            } else if (viewName === "DesktopView") {
+
+                document.getElementById("ARphoto").src = "images/virtual/3dExperiences/tabAR.png";
+                document.getElementById("Browserphoto").src = "images/virtual/3dExperiences/tabBrowserWhite.png";
+                document.getElementById("VRphoto").src = "images/virtual/3dExperiences/tabVR.png";
+          
+                document.getElementById("default3").style.backgroundColor = "rgb(227, 239, 248)";
+                tablinks = document.getElementsByClassName("tablinks2");
+                document.getElementById("default").style.backgroundColor = "#1080AF";
+                document.getElementById("default").style.color = "#FFFFFF";
+                document.getElementById("default2").style.backgroundColor = "rgb(227, 239, 248)";
+                document.getElementById("default2").style.color = "#000000";
+                document.getElementById("default3").style.color = "#000000";
+                //move the other two buttons below active? 
+
+
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+
+            } else {
+
+                document.getElementById("default3").style.color = "#000000";
+                document.getElementById("Browserphoto").src = "images/virtual/3dExperiences/tabBrowser.png";
+                document.getElementById("ARphoto").src = "images/virtual/3dExperiences/tabAR.png";
+                document.getElementById("VRphoto").src = "images/virtual/3dExperiences/tabVRwhite.png";
+                document.getElementById("default").style.color = "#000000";
+                document.getElementById("default").style.backgroundColor = "rgb(227, 239, 248)";
+                document.getElementById("default2").style.backgroundColor = "#1080AF";
+                document.getElementById("default3").style.backgroundColor = "rgb(227, 239, 248)";
+                document.getElementById("default2").style.color = "#FFFFFF";
+
+                tablinks = document.getElementsByClassName("tablinks3");
+                for (i = 0; i < tablinks.length; i++) {
+                    tablinks[i].className = tablinks[i].className.replace(" active", "");
+                }
+
+            }
+
+            document.getElementById(viewName).style.display = "block";
+            evt.currentTarget.className += " active";
+
+        }
+        /*Notes:
+        - Toggle for the main tab (Browser, VR, AR)
+        */
+        //------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+        //----------------Function for opening the tab view within the VR tab-----------------
+        function openVRDevice(evt, viewName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontentDevice");//*
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinksDevice");//*
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(viewName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        /*Notes:
+       - Very similar to the above function called "openView", but subtle differences (namely the * lines)
+       - Toggle for the nested tab (in VR tab)
+       */
+
+        //---------------------------------------------------------------------------------------------
+
+
+
+
+
+
+
+        //---------------------------------------------------------------------------------------------
+
+        function openARinstructions(evt, cityName) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("ARInstructions");//*
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("t");//*
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(cityName).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        /*Notes:
+       - Very similar to the above function called "openView" and "OpenVRDevice",
+        but subtle differences (namely the * lines)
+       - For the tab in AR called 'Instructions' (tab even though it is singular)
+       */
+        //---------------------------------------------------------------------------------------------
+
+
+
+
+
+
+        //-------------------Show or Hide the Oculus Quest 2 tab------------------------------------------
+        function ShowAndHide() {
+
+            if (open === true) { //if any tabs open, close em
+
+                closeButtons();
+                GoogleactiveTab = false;
+                OtheractiveTab = false;
+
+            }
+
+
+            if (OcActiveTab === true) { //leave all buttons closed, close current tab
+
+                OcActiveTab = false;
+                document.getElementById("OculusBC").style.color = "#000000";
+                document.getElementById("OculusBC").style.backgroundColor = "#80C8F3";
+                document.getElementById("OtherBC").style.backgroundColor = "#80C8F3";
+                document.getElementById("GoogleBC").style.backgroundColor = "#80C8F3";
+
+
+            } else { //open new tab
+
+                // document.getElementById("ARidOuterEdge").style.backgroundColor = "rgb(227, 239, 248)";
+                document.getElementById("OculusBC").style.backgroundColor = "#1080AF";
+                xed.style.display = 'block';
+                open = true;
+                OcActiveTab = true; //closed all previous, buttons, then opened this one, but made a mark that this
+                document.getElementById("GoogleBC").style.color = "#000000";
+                document.getElementById("OtherBC").style.color = "#000000";
+                document.getElementById("OculusBC").style.color = "#FFFFFF";
+                document.getElementById("GoogleBC").style.backgroundColor = "#80C8F3";
+                document.getElementById("OtherBC").style.backgroundColor = "#80C8F3";
+                //one is open
+
+            }
+        }
+
+        /*Notes:
+       - Most notes are noted next to the code
+       */
+        //---------------------------------------------------------------------------------------------
+
+
+
+
+        //-------------------Show or Hide the Google Cardboard tab------------------------------------------
+        function ShowAndHide2() {
+
+
+            if (open === true) { //if any tabs open, close em
+
+                closeButtons();
+                OcActiveTab = false;
+                OtheractiveTab = false;
+
+            }
+
+            //if tab you clicked on was previously clicked on, dont open it, but leave as is, closed.
+            //if second clicked, active should be 
+            if (GoogleactiveTab === true) { //leave all buttons closed, close current tab
+
+                document.getElementById("GoogleBC").style.color = "#000000";
+                GoogleactiveTab = false;
+                document.getElementById("OculusBC").style.backgroundColor = "#80C8F3";
+                document.getElementById("OtherBC").style.backgroundColor = "#80C8F3";
+                document.getElementById("GoogleBC").style.backgroundColor = "#80C8F3";
+
+            } else { //open new tab
+                document.getElementById("GoogleBC").style.backgroundColor = "#1080AF";
+                yed.style.display = 'block';
+                open = true;
+                GoogleactiveTab = true; //closed all previous, buttons, then opened this one, but made a mark that this
+                //one is open
+
+
+                document.getElementById("OtherBC").style.color = "#000000";
+                document.getElementById("OculusBC").style.color = "#000000";
+                document.getElementById("GoogleBC").style.color = "#FFFFFF";
+                document.getElementById("OculusBC").style.backgroundColor = "#80C8F3";
+                document.getElementById("OtherBC").style.backgroundColor = "#80C8F3";
+
+
+            }
+        }
+        /*Notes:
+        - Most notes are noted next to the code
+        */
+        //----------------------------------------------------------------------------------------------------------------
+
+
+
+        //----------------------------------------------------------------------------------------------------------------
+
+
+
+        //-------------------Show or Hide the Others tab------------------------------------------
+        function ShowAndHide3() {
+
+
+
+            if (open === true) { //if any tabs open, close em
+
+                closeButtons();
+                OcActiveTab = false;
+                GoogleactiveTab = false;
+
+            }
+
+            //if tab you clicked on was previously clicked on, dont open it, but leave as is, closed.
+            //if second clicked, active should be 
+            if (OtheractiveTab === true) { //leave all buttons closed, close current tab
+
+                document.getElementById("OtherBC").style.color = "#000000";
+                OtheractiveTab = false;
+                document.getElementById("OculusBC").style.backgroundColor = "#80C8F3";
+                document.getElementById("OtherBC").style.backgroundColor = "#80C8F3";
+                document.getElementById("GoogleBC").style.backgroundColor = "#80C8F3";
+
+            } else { //open new tab
+
+                document.getElementById("OtherBC").style.backgroundColor = "#1080AF";
+                zed.style.display = 'block';
+                open = true;
+                OtheractiveTab = true; //closed all previous, buttons, then opened this one, but made a mark that this
+                //one is open
+
+
+                document.getElementById("GoogleBC").style.color = "#000000";
+                document.getElementById("OculusBC").style.color = "#000000";
+                document.getElementById("OtherBC").style.color = "#FFFFFF";
+                document.getElementById("GoogleBC").style.backgroundColor = "#80C8F3";
+                document.getElementById("OculusBC").style.backgroundColor = "#80C8F3";
+
+
+            }
+
+        }
+        /*Notes:
+        - Most notes are noted next to the code
+        */
+        //----------------------------------------------------------------------------------------------------------------
+
+
+
+        //-------------------Show or Hide the AR instructions tab------------------------------------------
+        function ShowAndHideAR() {
+
+            if (AR_active === true) {
+
+
+                AR_active = false;
+                document.getElementById("ARid").style.color = "#000000";
+                document.getElementById("ARidOuterEdge").style.backgroundColor = "rgb(227, 239, 248)";
+                // document.getElementById("ARidOuterEdge").style.backgroundColor = "rgb(227, 239, 248)";
+                document.getElementById("ARid").style.backgroundColor = "rgb(227, 239, 248)";
+                wed.style.display = 'none';
+
+            } else { //open new tab
+
+                //change blue to white
+                document.getElementById("ARidOuterEdge").style.backgroundColor = "#1080AF";
+                document.getElementById("ARid").style.backgroundColor = "#1080AF"; //change of background color
+                wed.style.display = 'block';
+
+                document.getElementById("ARLogo").style.display = 'block'; //this is here because of the jquery below
+
+                document.getElementById("ARid").style.color = "#FFFFFF";
+                //ar = white
+                AR_active = true;
+
+            }
+        }
+        /*Notes:
+        - Most notes are noted next to the code
+        */
+
+        //-------------------Show or Hide the AR tab instructions------------------------------------------
+
+
+
+
+        //-------------------The below method is a function used to close all buttons------------------------------------------ 
+
+        function closeButtons() {
+
+
+            var x = document.getElementById('Oculus');
+            var y = document.getElementById('Google');
+            var z = document.getElementById('Other');
+            document.getElementById("OculusBC").style.backgroundColor = "#80C8F3";
+            document.getElementById("OtherBC").style.backgroundColor = "#80C8F3";
+            document.getElementById("GoogleBC").style.backgroundColor = "#80C8F3";
+            x.style.display = 'none';
+            y.style.display = 'none';
+            z.style.display = 'none';
+            open = false;
+
+        }
+
+        /*Notes:
+        - None
+        */
+
+        //----------------------------------------------------------------------------------------------------------------------
+
+
+
+        //-------The below method is a function used for the blue arrows that return the tab to it's non-expanded state---
+
+
+        function condenseFunction() {
+
+            document.getElementById("GoogleBC").style.backgroundColor = "#80C8F3";
+            document.getElementById("OculusBC").style.backgroundColor = "#80C8F3"
+            document.getElementById("OtherBC").style.backgroundColor = "#80C8F3";
+            // document.getElementById("ARid").style.backgroundColor = "rgb(227, 239, 248)";
+            // document.getElementById("ARidOuterEdge").style.backgroundColor = "rgb(227, 239, 248)";
+            // document.getElementById("ARid").style.color = "#000000";
+            document.getElementById("GoogleBC").style.color = "#000000";
+            document.getElementById("OculusBC").style.color = "#000000";
+            document.getElementById("OtherBC").style.color = "#000000";
+            AR_active = false;
+            OcActiveTab = false;
+            OtheractiveTab = false;
+            GoogleactiveTab = false;
+            // wed.style.display = 'none';
+            xed.style.display = 'none';
+            yed.style.display = 'none';
+            zed.style.display = 'none';
+            el.scrollIntoView(true);
+
+        }
+
+        /*Notes:
+       - None
+       */
+        //----------------------------------------------
+
+
+        //-------Below method is for sliding button-------
+        $("#btnSlideUp").click(function () {
+            $("#AR").slideUp("slow");
+            $("#ARLogo").hide();
+            AR_active = false;
+            document.getElementById("ARid").style.backgroundColor = "rgb(227, 239, 248)";
+            window.scrollTo({ top: 900, behavior: 'smooth' });
+            document.getElementById("ARid").style.color = "#000000";
+        });
+
+        /*Notes:
+       - Have yet to decide if we want to implement this
+       */
+//----------------------------------------------
+
+
+
+
+//-----------------------------------------------------------------------------------------------------------------
+
+    </script>
+    <!--------------------End of Script---------------------------------->
+
+
+
+
+    <!-- The below HTML is simply the footer to the page-->
+    <footer>
+        <div class="footer"">
+            <h1><a href=" index.html" style="color: white; font-weight: 400; padding-right:initial;">Maritime <span
+                style="font-weight:600;">A.R.</span></a></h1>
+            <div id="navbar" style="justify-content:center; margin-right:auto; margin-top: 2vh;">
+                <a href="index.html">
+                    <p class="links" style="color:white;">Home</p>
+                </a>
+                <a href="InPerson.html">
+                    <p class="links" style="color:white;">In Person Visitors</p>
+                </a>
+                <a href="Virtual.html">
+                    <p class="links" style="color:white;">Videos</p>
+                </a>
+                <a href="About.html">
+                    <p class="links" style="color:white;">About</p>
+                </a>
+
+            </div>
+
+
+        </div>
+        <div class="footer_mobile">
+            <h1><a href="index.html"
+                    style="color: white; font-weight: 400; padding-right:initial; font-size:40px; text-align:center;">Maritime
+                    <span style="font-weight:600;">A.R.</span></a></h1>
+            <hr style="border-color:white; margin-top:2vh; width:80%" />
+            <div id="footer_nav_mobile">
+                <a href="index.html">
+                    <p class="links" style="color:white;">Home</p>
+                </a>
+                <a href="InPerson.html">
+                    <p class="links" style="color:white;">In Person Visitors</p>
+                </a>
+                <a href="Virtual.html">
+                    <p class="links" style="color:white;">Videos</p>
+                </a>
+                <a href="About.html">
+                    <p class="links" style="color:white;">About</p>
+                </a>
+
+            </div>
+
+        </div>
+        <img class="ShinemanPic" src="images/virtual/3dExperiences/shineman.png" alt="Shineman Foundation Image">
+
+
+    </footer>
+    <script>
+        function toggleNav() {
+            var item = document.getElementById('mobileNav');
+            if (item.style.display == 'none') {
+                item.style.display = 'block';
+            }
+            else {
+                item.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+
+</html>

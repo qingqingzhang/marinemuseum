@@ -1,0 +1,144 @@
+﻿/*STAFF TABLE*/
+.AR_text {
+    text-align: left;
+    width: initial;
+    margin-left: 15%;
+}
+
+.table_row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 15vw;
+    margin-right: 15vw;
+    align-content: center;
+    align-items: flex-start;
+}
+
+.headshot_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    width: 20vw;
+    height:20vw;
+}
+
+.title {
+    text-align: left;
+    margin-top: 0;
+    width: 20vw;
+}
+
+.title_mobile{
+    display:none;
+}
+
+.name {
+    text-align: left;
+    margin-top: 2vh;
+    width: 20vw;
+    margin-bottom: 0;
+}
+
+.name_mobile{
+    display:none;
+}
+
+
+#filler {
+    width: 20vw;
+}
+
+
+
+
+/*ADDITIONAL TEXT CUSTOMIZATION*/
+#about_text {
+    width: 70%;
+    height:fit-content;
+    text-align:justify;
+    /*margin-bottom: 0.5vh;*/
+    margin-left:auto;
+    margin-right:auto;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #B7B2AB;
+    height: 6px;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+    width: 70%;
+}
+
+
+/*ADDITIONAL CUSTOMIZATION*/
+#rsfAttribution {
+    width: 25vw;
+    left: auto;
+    right: auto;
+}
+
+#hero_img {
+    background-image: url('images/homepage/bannerJamesLloyd.JPG');
+}
+
+
+/*MOBILE EDITS*/
+@media only screen and (max-width:900px) {
+    /*STAFF TABLE*/
+    .headshot_img {
+        width: 70vw;
+        height: 70vw;
+        border-radius: 5vw;
+    }
+
+    .title{
+        display:none;
+    }
+
+    .title_mobile {
+        display:block;
+        width: 70vw;
+        text-align: left;
+        margin-top: 0;
+    }
+
+    .name {
+        display: none;
+    }
+
+    .name_mobile {
+        display: block;
+        text-align: left;
+        margin-top: 2vh;
+        width: 70vw;
+        margin-bottom: 0;
+    }
+
+    #filler {
+        display:none;
+    }
+
+    .table_row {
+        display: flex;
+        justify-content: space-between;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        align-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    /*TEXT*/
+    .AR_text {
+        text-align: left;
+        width: initial;
+        margin-right: 15%;
+        margin-left: 15%;
+    }
+    h2 {
+        font-size: 20px;
+        font-weight: 400;
+    }
+}

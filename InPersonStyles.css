@@ -1,0 +1,220 @@
+﻿/*HERO IMAGE/MESSAGE*/
+#get_started_text {
+    color: white;
+    max-width: 90vw;
+    margin: auto;
+    height: fit-content;
+    font-size: 20px;
+}
+
+#get_started_big_text {
+    width: 40vw;
+    max-width: 90vw;
+    font-size: 25px;
+}
+
+#hero_img {
+    background-image: url('images/homepage/bannerPatrickKinaneCropped.jpeg');
+}
+
+#scoll_down_button {
+    background-color: transparent;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: fit-content;
+    width: fit-content;
+    justify-self: center;
+    border: none;
+    margin-top: 10px;
+}
+
+/*INSTRUCTION IMAGES/TEXT*/
+.promo_img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 70px;
+    /*background: gray;*/
+    width: 75%;
+}
+
+.promo_text {
+    text-align: center;
+    color: #1080AF;
+}
+
+.lorem_ipsum {
+    text-align: justify;
+    /*width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;*/
+}
+
+.instruction1_and_3 {
+    margin-left: 10vw;
+    margin-right: 10vw;
+}
+
+#instruction2 {
+    /*background: rgba(16, 128, 175, 0.08);*/
+    /*margin: 20px;*/
+    /*border-radius: 100px;*/
+    margin: 50px 10vw 50px 10vw;
+    /*padding-top: 50px;
+    padding-bottom: 50px;*/
+    background: rgba(16, 128, 175, 0.08);
+    border-radius: 0;
+    margin: 5vw 0 5vw 0;
+    padding: 5vw;
+}
+
+
+/*ADDITIONAL CUSTOMIZATION*/
+#app_store_logos {
+    display: flex;
+    justify-content: space-evenly;
+    /* margin-top: -3vh; */
+    /* margin-left: 0; */
+    /* max-width: max-content; */
+    align-items: center;
+    /* max-width: 74%; */
+}
+
+#applebtn {
+    border-radius: 13px;
+    margin: 6%;
+    width: 29vw;
+}
+#googlebtn {
+    width: 35vw;
+}
+
+#headphones_icon {
+    margin-left: 25%;
+    margin-right: 25%;
+    margin-top: 2vh;
+    width: 50%;
+}
+
+.copyright {
+    font-size: small;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    width: 80vw;
+    height: fit-content;
+}
+
+/*Desktop Edits:*/
+@media only screen and (min-width: 1025px) {
+    /*HERO IMAGE/MESSAGE*/
+    #get_started_text {
+        color:white;
+        max-width: 90vw;
+        margin: auto;
+        height: fit-content;
+        font-size: 30px;
+    }
+    #get_started_big_text {
+        width: 40vw;
+        max-width: 90vw;
+        font-size:45px;
+    }
+
+
+    /*INSTRUCTION IMAGES/TEXT*/
+    .promo_img {
+        /*width: 45%;
+        max-width: 600px;
+        margin-left: 12%;
+        margin-right: 0%;*/
+        /* width: 50vw; */
+        /* height: fit-content; */
+        width: auto;
+        height: 50vh;
+        max-width: 50vw;
+        max-height: 50vw;
+        margin-left: 5vw;
+    }
+
+    .promo_text {
+        /*text-align: left;
+        max-width: 508px;*/
+        width: 40vw;
+        text-align: left;
+    }
+
+    .lorem_ipsum {
+        /*text-align: left;
+        max-width: 508px;
+        margin-top: 5vh;*/
+        /*margin-bottom: -5vh;*/
+        text-align: left;
+        width: 40vw;
+    }
+    
+    .instruction1_and_3 {
+        display: flex;
+        justify-content: center;
+    }
+
+    .text_1_and_3 {
+        margin-top: 14vh;
+        margin-left: 5vw;
+        margin-right: 5vw;
+        /* width: 45vw; */
+        display: inline-grid;
+    }
+
+    #instruction2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+        background: rgba(16, 128, 175, 0.08);
+        border-radius: 0;
+        margin: 5vw 0 5vw 0;
+        padding: 5vw 0 5vw 0;
+        align-items: center;
+    }
+
+    .text_2 {
+        margin-right: 0;
+        margin-left: 5vw;
+        /* margin-top: 10vh; */
+        max-width: 40vw;
+    }
+
+    #image2 {
+        margin-left: 0;
+        margin-right: 5vw;
+        margin-top: auto;
+    }
+
+
+    /*ADDITIONAL TEXT CUSTOMIZATION*/
+    a {
+        padding-right: 20px;
+    }
+
+
+    /*ADDITIONAL CUSTOMIZATION*/
+    #app_store_logos {
+        /*margin-top: -3vh;
+        margin-left: 0;
+        max-width: 400px;*/
+        margin-top: -3vh;
+        margin-left: 0;
+        max-width: 40vw;
+        display: inline-flex;
+    }
+    #applebtn{
+        width:15vw;
+    }
+    #googlebtn {
+        width: 18vw;
+    }
+
+    #headphones_icon {
+        margin-right: 34%;
+        margin-left: 2%;
+    }
+}

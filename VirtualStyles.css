@@ -1,0 +1,106 @@
+﻿html{
+    scroll-behavior: auto;
+}
+
+#hero_img {
+    background-image: url('images/homepage/bannerVideos2.png');
+}
+
+
+/*VIDEOS*/
+#videos {
+    background: rgba(16,128,175,0.08);
+    text-align: center;
+    padding-top: 8vh;
+    padding-bottom: 8vh;
+}
+
+/*Video Controls*/
+#videoarea {
+    width: 75vw;
+    height: auto;
+    background: #E5E5E5;
+    max-width: fit-content;
+}
+#videoarea:hover{
+    cursor:pointer;
+}
+
+#playlist_box {
+    display:none;
+    padding-left: 2vw;
+    background: white;
+    box-shadow: 3px 3px 4px rgb(0,0,0, .35);
+    padding-right: 2vw;
+}
+
+/*PLAYLIST*/
+#playlist {
+    text-align: left;
+    width: initial;
+    margin-top: 8vh;
+    margin-left: 10%;
+    margin-bottom: 5vh;
+}
+
+.table_row {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 16vw;
+    margin-right: 16vw;
+    align-content: center;
+    align-items: center;
+}
+
+.playlist_img {
+    border-radius: 5%;
+    width: 30vw;
+    height: 20vw;
+}
+.playlist_img:hover{
+    cursor:pointer;
+}
+
+.title {
+    width: 30vw;
+    margin-bottom: 0;
+    margin-top: 2vh;
+}
+
+.description {
+    width: 30vw;
+    margin-top: 1vh;
+    margin-bottom: 8vh;
+}
+
+/*Additional Text Edits*/
+#header{
+    margin-left:5vw;
+    margin-right:5vw;
+}
+
+#flavor{
+    margin-left:5vw;
+    margin-right:5vw;
+    padding-bottom:3vh;
+}
+
+
+
+
+/*Mobile Edits:*/
+@media only screen and (max-width: 1025px) {
+    .table_row {
+        flex-direction: column;
+    }
+    .playlist_img{
+        width:75vw;
+        height:50vw;
+    }
+    .title{
+        width:75vw;
+    }
+    .description{
+        width:75vw;
+    }
+}
